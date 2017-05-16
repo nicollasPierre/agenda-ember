@@ -8,7 +8,11 @@ const Router = Ember.Router.extend({
 
 Router.map(function() {
   this.route('tabela-contatos', function() {
-    this.route('show' , {path: '/:id' });
+    this.route('detalhes', {path: '/:contatos_id' });
+  });
+
+  this.route('contatos', function() {
+    this.route('detalhes', {path: '/:contatos_id' });
   });
 });
 

@@ -12,13 +12,14 @@
     </div>
   </header>
   <div class="mdl-layout__drawer">
-    <span class="mdl-layout-title">Title</span>
+    <span class="mdl-layout-title">Páginas</span>
     <nav class="mdl-navigation">
-      <a class="mdl-navigation__link" href="">Tabela de contatos</a>
-      <a class="mdl-navigation__link" href="">Cadastro de contatos</a>
+    {{#link-to "tabela-contatos"}}  <span class="mdl-navigation__link" href="">Tabela de contatos</span> {{/link-to}}
+      <span class="mdl-navigation__link" href="">Cadastro de contatos</span>
     </nav>
   </div>
   <main class="mdl-layout__content">
+    <div id="espacamento" style="height:30px;"></div>
     <div class="page-content">{{outlet}}</div>
   </main>
 </div>
