@@ -5,8 +5,8 @@ export default function() {
   this.get('/contatos', function() {
     return {
       data: [{
+              id: 1,
               type: 'contatos',
-              id: 'nicollas1',
               attributes: {
                 nome: 'nicollas',
                 email: 'nicollaspierre@gmail.com',
@@ -19,8 +19,8 @@ export default function() {
               }
           },
           {
+            id: 2,
             type: 'contatos',
-            id: 'paulo2',
             attributes: {
               nome: 'paulo',
               email: 'paulo.f.piva@gmail.com',
@@ -33,8 +33,8 @@ export default function() {
             }
           },
           {
+            id: 3,
             type: 'contatos',
-            id: 'daniel3',
             attributes: {
               nome: 'daniel',
               email: 'danielmartini@gmail.com',

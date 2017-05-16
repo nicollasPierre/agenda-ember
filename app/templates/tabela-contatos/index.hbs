@@ -1,0 +1,11 @@
+{{#each model as |contatos|}}
+  <tr>
+      <td class="mdl-data-table__cell--non-numeric">{{contatos.nome}}</td>
+      <td>
+        {{#link-to "show" contatos}}{{contatos.email}}{{/link-to}}
+      </td>
+      <td>{{contatos.celular}}</td>
+      <td>{{contatos.dtNasc}}</td>
+  </tr>
+{{/each}}
+{{outlet}}
