@@ -1,0 +1,62 @@
+<div align="center">
+    <div style="width:30%">
+    <form action="#">
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" style="width:100%">
+            <input class="mdl-textfield__input" type="text" id="nome-completo">
+            <label class="mdl-textfield__label" for="nome-completo">Nome completo</label>
+        </div><br>
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" style="width:65%">
+            <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*" id="numero-telefone">
+            <label class="mdl-textfield__label" for="numero-telefone">Telefone</label>
+            <span class="mdl-textfield__error">Número inválido!</span>
+        </div>
+
+       <select class="mdl-button mdl-button--primary"  style="width:34%">
+            <option class="mdl-navigation__link" value="celular">Celular</option>
+            <option class="mdl-navigation__link" value="residencial">Residencial</option>
+            <option class="mdl-navigation__link"  value="comercial">Comercial</option>
+        </select>
+        <br>
+        <div align="left">
+            <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="pessoa-fisica" align="left">
+                <input type="radio" id="pessoa-fisica" class="mdl-radio__button" name="options" value="1" checked>
+                <span class="mdl-radio__label">Pessoa física </span>
+            </label>
+            <span style="width:30px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="pessoa-juridica">
+                <input type="radio" id="pessoa-juridica" class="mdl-radio__button" name="options" value="2">
+                <span class="mdl-radio__label">Pessoa jurídica</span>
+            </label>
+        </div>
+
+        <br><div align="left" >
+             <span class="mdl-checkbox__label">Data Nascimento:</span>
+            <div class="mdl-textfield mdl-js-textfield" style="width:150px;padding-left:5px" align="left">
+                <input  class="mdl-textfield__input" type="date">
+            </div>
+            <span align="right">
+            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-2" style="width:1px">
+                <input type="checkbox" id="checkbox-2" class="mdl-checkbox__input" >
+                <span class="mdl-checkbox__label">Favorito</span>
+            </label>
+            </span> 
+        </div>
+        <br>
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--file" style="width:100%">
+                <input class="mdl-textfield__input" style="width: calc(100% - 32px);" placeholder="Foto" type="text" id="uploadFile" readonly/>
+                <div class="mdl-button mdl-button--primary mdl-button--icon mdl-button--file" style="right: 0;">
+                <i class="material-icons">attach_file</i><input type="file" id="uploadBtn" style="cursor: pointer;height: 100%;right: 0;opacity: 0;position: absolute;top: 0;width: 300px;z-index: 4;">
+                </div>
+            </div>
+        <div align="right">
+        <button class="mdl-button mdl-js-button mdl-button--raised">
+             Cancelar
+        </button>
+        <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent">
+                Salvar
+        </button>
+
+        </div>
+    </form>
+</div>
+</div>

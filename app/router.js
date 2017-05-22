@@ -14,6 +14,7 @@ Router.map(function() {
   this.route('contatos', function() {
     this.route('detalhes', {path: '/:contatos_id' });
   });
+  this.route('cadastro-contatos');
 });
 
 export default Router;
